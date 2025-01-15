@@ -1,20 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import Navigation from './components/Navigation'
+import HeroBlock from './components/HeroBlock.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+const a = "darren";
   return (
     <>
-      <h1>Project Enchanted Oven</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <Navigation />
+      <HeroBlock name={a}/>
     </>
   )
 }

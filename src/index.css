@@ -1,6 +1,8 @@
 :root {
-  --background-white: #f0f0f0;
+  --background-white: #fff;
   --font-color-black: #000;
+  /* Pallete */
+  --main-colour-1: #ffa70052;
 }
 
 :root {

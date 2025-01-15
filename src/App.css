@@ -1,7 +1,97 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--main-colour-1);
+}
+section {
+  width: 100%;
+}
+
+.img-container {
+  height: 100%;
+  width: 85px;
+  cursor: pointer;
+}
+.img-container > img {
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.hero-block-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.hero-block-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  transition: background-color 0.4s ease;
+  background: #00000060;
+  backdrop-filter: blur(10px);
+}
+.hero-block-container > img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: #00000060;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+.muffin-icon {
+  position: absolute;
+  animation: shake 2s linear infinite alternate-reverse;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(8deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(8deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(8deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(8deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+}
