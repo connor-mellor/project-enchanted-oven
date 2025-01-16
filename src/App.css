@@ -69,6 +69,25 @@ section {
   animation: shake 2s linear infinite alternate-reverse;
 }
 
+.what-we-do {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+
+.tile {
+  height: auto;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  background: #f9cbff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes shake {
   0% {
     transform: rotate(8deg);

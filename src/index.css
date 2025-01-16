@@ -34,8 +34,11 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
+}
+h2 {
+  font-size: 1.4em;
 }
 
 button {
@@ -55,6 +58,24 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width: 1028px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 728px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
 }
 
 @media (prefers-color-scheme: light) {
