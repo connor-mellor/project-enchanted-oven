@@ -1,10 +1,12 @@
+import bakeryLogo from '../assets/bakery-logo.jpg'
+
 function Navigation() {
 
     return (
         <nav>
             <a href="/">
                 <div className="img-container">
-                    <img src="./src/assets/bakery-logo.jpg" alt="log of cake icing" />
+                    <img src={bakeryLogo} alt="log of cake icing" />
                 </div>
             </a>
         </nav>
