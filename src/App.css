@@ -27,7 +27,7 @@ section {
   position: relative;
   display: flex;
   width: 100%;
-  max-width: var(sizing-max);
+  max-width: var(--sizing-max);
   margin: 0 auto;
 }
 .hero-block-container:after {
