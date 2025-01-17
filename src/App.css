@@ -27,7 +27,7 @@ section {
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 1920px;
+  max-width: var(sizing-max);
   margin: 0 auto;
 }
 .hero-block-container:after {
@@ -70,11 +70,12 @@ section {
 }
 
 .what-we-do {
-  margin-top: 15px;
+  margin-top: 15px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: var(--sizing-max);
   gap: 15px;
 }
 

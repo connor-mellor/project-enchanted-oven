@@ -3,6 +3,8 @@
   --font-color-black: #000;
   /* Pallete */
   --main-colour-1: #ffa70052;
+  /* Sizing */
+  --sizing-max: 1920px;
 }
 
 :root {
