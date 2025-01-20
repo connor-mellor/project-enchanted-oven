@@ -20,7 +20,6 @@ section {
 .img-container > img {
   height: 100%;
   width: 100%;
-  mix-blend-mode: multiply;
 }
 
 .hero-block-container {
@@ -83,6 +82,19 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (max-width: 728px) {
+  .hero-block-container > img {
+    content: url('./assets/hero-img-mob.jpg');
+  }  
+
+  .overlay-card {
+    top: 25%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
 }
 
 @keyframes shake {

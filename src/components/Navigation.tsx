@@ -1,4 +1,4 @@
-import bakeryLogo from '../assets/bakery-logo.jpg'
+import bakeryLogo from '../assets/maries-c&b-logo.jpg'
 
 function Navigation() {
 
