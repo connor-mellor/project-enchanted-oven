@@ -5,24 +5,19 @@ import image4 from '../assets/cupcakes-2.png'
 import image5 from '../assets/brownies.png'
 import image6 from '../assets/multi.png'
 
-type Images = {
-    [key: string]: string;
-}
-
 type Inventory = {
     name: string;
     image: string;
 }
 
 const WhatWeDo: React.FC = () => {
-    const IMAGES: Images = { image1, image2, image3, image4, image5, image6 };
 
     const INVENTORY: Inventory[] = [
-        { name: "Cakes", image: IMAGES.image1},
-        { name: "Cookies", image: IMAGES.image2},
-        { name: "Cupcakes", image: IMAGES.image3},
-        { name: "Brownies", image: IMAGES.image4},
-        { name: "Cheesecake", image: IMAGES.image5},
+        { name: "Cakes", image: image1},
+        { name: "Cookies", image: image2},
+        { name: "Cupcakes", image: image3},
+        { name: "Brownies", image: image4},
+        { name: "Cheesecake", image: image5},
     ];
 
     return (
