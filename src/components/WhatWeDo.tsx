@@ -22,12 +22,17 @@ const WhatWeDo: React.FC = () => {
 
     return (
         <section className="what-we-do">
-            {INVENTORY.map(({ name, image }, i) => (
-                <div className="tile" key={i}>
-                    <img src={image} alt={name} />
-                    <p>{name}</p>
-                </div>
-            ))}
+            <div className="section-title">
+                <h1>What We Do</h1>
+            </div>
+            <div className="tile-container">
+                {INVENTORY.map(({ name, image }, i) => (
+                    <div className="tile" key={i}>
+                        <img src={image} alt={name} />
+                        <p>{name}</p>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
