@@ -4,7 +4,7 @@ function Navigation() {
 
     return (
         <nav>
-            <a href="/">
+            <a href="/project-enchanted-oven">
                 <div className="img-container">
                     <img src={bakeryLogo} alt="log of cake icing" />
                 </div>
