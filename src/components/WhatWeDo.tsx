@@ -1,9 +1,10 @@
 import image1 from '../assets/cake.png'
 import image2 from '../assets/cookies.png'
 import image3 from '../assets/cupcakes.png'
-import image4 from '../assets/cupcakes-2.png'
-import image5 from '../assets/brownies.png'
-import image6 from '../assets/multi.png'
+import image4 from '../assets/brownies.jpg'
+import image5 from '../assets/rocky-road.png'
+import image6 from '../assets/cheesecakes.jpg'
+import image7 from '../assets/giant-cookies.jpg'
 
 type Inventory = {
     name: string;
@@ -17,7 +18,9 @@ const WhatWeDo: React.FC = () => {
         { name: "Cookies", image: image2},
         { name: "Cupcakes", image: image3},
         { name: "Brownies", image: image4},
-        { name: "Cheesecake", image: image5},
+        { name: "Rocky Road", image: image5},
+        { name: "Cheesecakes", image: image6},
+        { name: "Giant Cookies", image: image7},
     ];
 
     return (
@@ -29,7 +32,9 @@ const WhatWeDo: React.FC = () => {
                 {INVENTORY.map(({ name, image }, i) => (
                     <div className="tile" key={i}>
                         <img src={image} alt={name} />
-                        <p>{name}</p>
+                        <div className="tile-overlay">
+                            <h3>{name}</h3>
+                        </div>
                     </div>
                 ))}
             </div>

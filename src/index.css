@@ -5,6 +5,8 @@
   --font-color-black: #000;
   /* Pallete */
   --main-colour-1: #f36f72;
+  --main-colour-2: #f36f7294;
+  --alt-colour-1: #e7f1de;
   /* Sizing */
   --sizing-max: 1920px;
   --sizing-slim-max: 1420px;
@@ -15,7 +17,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -44,16 +46,20 @@ body {
 
 h1 {
   margin: 0;
-  font-family: "Bebas Neue";
   font-size: 3.2em;
   line-height: 1.1;
   position: relative;
 }
 h2 {
-  font-family: "Bebas Neue";
-  font-size: 2em;
+  font-size: 1.5em;
 }
-h1, h2 {
+h3 {
+  font-size: 1.4em;
+  margin: 0;
+  padding: calc(var(--spacing-small) * 2);
+}
+h1, h2, h3 {
+  font-family: "Bebas Neue";
   letter-spacing: 0.8px;
 }
 
