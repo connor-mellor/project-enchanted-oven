@@ -40,7 +40,7 @@ section {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: var(--font-colour-black);
-  animation: slide 12s linear infinite;
+  animation: slide 12s linear infinite reverse;
 }
 
 .hero-block-container {
