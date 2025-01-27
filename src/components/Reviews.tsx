@@ -23,6 +23,14 @@ const Reviews: React.FC = () => {
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
             </iframe>
+            <iframe 
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fskye.mellor.3910829%2Fposts%2Fpfbid02yW2ENZS68zWmf85eR5HhNsfH4qp1HjSYZzMybpbFTxX3tS4Doamm3uV9wZPdh5NAl&show_text=true&width=500" 
+                width="500" 
+                height="209" 
+                style={{ border: "none", overflow: "hidden" }}  
+                allowFullScreen 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
         </>
     )
 }
