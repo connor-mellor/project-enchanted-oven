@@ -137,6 +137,28 @@ section {
   background: var(--main-colour-1);
 }
 
+.quote-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: var(--sizing-max);
+  width: 90%;
+} 
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1420px;
+  width: 100%;
+}
+
+.footer {
+  background: var(--main-colour-1);
+  padding: var(--spacing-large);
+}
+
 @media (max-width: 728px) {
   .hero-block-container > img {
     content: url('./assets/hero-img-mob.jpg');
