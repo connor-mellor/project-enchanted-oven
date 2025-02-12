@@ -6,7 +6,7 @@ function Navigation() {
         <nav>
             <a href="/project-enchanted-oven">
                 <div className="img-container">
-                    <img src={bakeryLogo} alt="log of cake icing" />
+                    <img src={bakeryLogo} alt="log of cake icing" loading="lazy" />
                 </div>
             </a>
         </nav>

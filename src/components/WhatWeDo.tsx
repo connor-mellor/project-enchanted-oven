@@ -31,7 +31,7 @@ const WhatWeDo: React.FC = () => {
             <div className="tile-container">
                 {INVENTORY.map(({ name, image }, i) => (
                     <div className="tile" key={i}>
-                        <img src={image} alt={name} />
+                        <img src={image} alt={name} loading="lazy"/>
                         <div className="tile-overlay">
                             <h3>{name}</h3>
                         </div>
