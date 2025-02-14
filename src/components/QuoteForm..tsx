@@ -60,20 +60,20 @@ const QuoteForm = () => {
             <h1>Get A Quote</h1>
         </div>
         <form className="quote-form" onSubmit={handleSubmit(onSubmit)}>
-            <label>Name:</label>
+            <label>Name<sup>*</sup></label>
             <input {...register("name", { required: "Name is required" })} />
-            {errors.name && <p>{errors.name.message}</p>}
+            {errors.name && <p className="error">{errors.name.message}</p>}
 
-            <label>Email:</label>
+            <label>Email<sup>*</sup></label>
             <input
                 {...register("email", {
                 required: "Email is required",
                 pattern: { value: /\S+@\S+\.\S+/, message: "Invalid email" },
                 })}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <p className="error">{errors.email.message}</p>}
 
-            <label>Category:</label>
+            <label>Category<sup>*</sup></label>
             <select {...register("category", { required: "Please select a category" })}>
                 <option value="">Select a category</option>
                 {Object.keys(categoryOptions).map((key) => (
@@ -82,11 +82,11 @@ const QuoteForm = () => {
                 </option>
                 ))}
             </select>
-            {errors.category && <p>{errors.category.message}</p>}
+            {errors.category && <p className="error">{errors.category.message}</p>}
 
             {selectedCategory && (
                 <>
-                <label> {selectionLabel} </label>
+                <label> {selectionLabel} <sup>*</sup></label>
                 <select {...register("cakeType", { required: "Please select an option" })}>
                     <option value="">Select an option</option>
                     {categoryOptions[selectedCategory].map((option) => (
@@ -95,7 +95,7 @@ const QuoteForm = () => {
                     </option>
                     ))}
                 </select>
-                {errors.cakeType && <p>{errors.cakeType.message}</p>}
+                {errors.cakeType && <p className="error">{errors.cakeType.message}</p>}
                 </>
             )}
 

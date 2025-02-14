@@ -150,8 +150,16 @@ section {
 .quote-form {
   display: flex;
   flex-direction: column;
-  max-width: 1420px;
+  max-width: 600px;
   width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.error {
+  color: #ff0000;
+  background: #ffbbbb;
+  padding: 0 var(--spacing-small);
 }
 
 .footer {
