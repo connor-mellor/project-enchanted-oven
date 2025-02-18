@@ -3,20 +3,21 @@ import Navigation from './components/Navigation'
 import Promo from './components/Promo.tsx'
 import HeroBlock from './components/HeroBlock.tsx'
 import WhatWeDo from './components/WhatWeDo.tsx'
-import QuoteForm from './components/QuoteForm..tsx'
-import Footer from './components/Footer.tsx'
 import Reviews from './components/Reviews.tsx'
-// import Reviews from './components/Reviews.tsx'
+import QuoteForm from './components/QuoteForm..tsx'
+import Contact from './components/Contact.tsx'
+import Footer from './components/Footer.tsx'
 
 function App() {
   return (
     <>
     
       <Navigation />
-      <Promo>Get your order in for Valentines Day now! - Feburary 14th</Promo>
+      <Promo>🐰 Order now in time for the Easter Bunny - April 20th 🐰</Promo>
       <HeroBlock />
       <WhatWeDo />
       <Reviews />
+      <Contact />
       <QuoteForm />
       <Footer />
     </>
