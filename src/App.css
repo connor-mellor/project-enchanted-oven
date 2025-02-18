@@ -174,7 +174,7 @@ section {
   display: flex;
   align-items: center;
   max-width: var(--sizing-slim-max);
-  padding: 0 var(--spacing-small);
+  padding: calc(var(--spacing-small)* 3) var(--spacing-small);
   gap: calc(var(--spacing-small)* 3);
   border-radius: 5px;
   overflow-x: scroll;
