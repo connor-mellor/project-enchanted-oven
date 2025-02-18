@@ -166,15 +166,14 @@ section {
 }
 
 .reviews {
+  width: 90%;
   margin: calc(var(--spacing-small)* 8) auto;
 }
 
 .reviews-container {
   display: flex;
   align-items: center;
-  width: 90%;
   max-width: var(--sizing-slim-max);
-  margin: 0 auto;
   padding: 0 var(--spacing-small);
   gap: calc(var(--spacing-small)* 3);
   border-radius: 5px;
@@ -182,7 +181,7 @@ section {
   scroll-snap-type: x mandatory;
 }
 .review-card {
-  min-width: 348px;
+  min-width: 350px;
   scroll-snap-align: center;
 }
 
