@@ -46,13 +46,8 @@ const QuoteForm = () => {
   };
 
   const selectionLabel = 
-    selectedCategory === "cupcakes" || selectedCategory === "cookies" || selectedCategory === "muffins"
-        ? "Flavor"
-        : selectedCategory === "brownies" || selectedCategory === "rockyRoad"
-        ? "Brownie/Rocky Road Type"
-        : selectedCategory === "giantCookies"
-        ? "Giant Cookie Type"
-        : "Cake Type";
+    ["cupcakes", "cookies", "muffins", "brownies", "rockyRoad"].includes(selectedCategory)
+        ? "Flavour" : "Cake Type";
 
   return (
     <section className="quote-section">
@@ -78,7 +73,7 @@ const QuoteForm = () => {
                 <option value="">Select a category</option>
                 {Object.keys(categoryOptions).map((key) => (
                 <option key={key} value={key}>
-                    {key.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())} {/* Format text */}
+                    {key.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}
                 </option>
                 ))}
             </select>
@@ -86,7 +81,7 @@ const QuoteForm = () => {
 
             {selectedCategory && (
                 <>
-                <label> {selectionLabel} <sup>*</sup></label>
+                <label> {selectionLabel}<sup>*</sup></label>
                 <select {...register("cakeType", { required: "Please select an option" })}>
                     <option value="">Select an option</option>
                     {categoryOptions[selectedCategory].map((option) => (

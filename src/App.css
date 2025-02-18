@@ -96,12 +96,15 @@ section {
   margin: calc(var(--spacing-small) * 8) auto;
 }
 
-.what-we-do ::-webkit-scrollbar {
+.what-we-do ::-webkit-scrollbar, 
+.reviews-container::-webkit-scrollbar {
   height: 8px;
   border-radius: 5px;
   background-color: #d7d7d7;
+  transition: height 0.4s ease;
 }
-.what-we-do ::-webkit-scrollbar-thumb {
+.what-we-do ::-webkit-scrollbar-thumb, 
+.reviews-container::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: #0e0e0e80;
 }
@@ -117,7 +120,7 @@ section {
   padding: calc(var(--spacing-small) * 3) 0;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  max-width: 1420px;
+  max-width: var(--sizing-slim-max);
   overflow-y: hidden;
   overflow-x: scroll;
   gap: calc(var(--spacing-small) * 3);
@@ -160,6 +163,27 @@ section {
   color: #ff0000;
   background: #ffbbbb;
   padding: 0 var(--spacing-small);
+}
+
+.reviews {
+  margin: calc(var(--spacing-small)* 8) auto;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: var(--sizing-slim-max);
+  margin: 0 auto;
+  padding: 0 var(--spacing-small);
+  gap: calc(var(--spacing-small)* 3);
+  border-radius: 5px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.review-card {
+  min-width: 348px;
+  scroll-snap-align: center;
 }
 
 .footer {
