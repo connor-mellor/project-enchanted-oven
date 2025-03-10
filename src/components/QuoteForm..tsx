@@ -108,7 +108,10 @@ const QuoteForm = () => {
                 draggable={false}
             />
 
-            <button type="submit">Submit Order</button>
+            <button type="submit">Submit</button>
+            <div className="warning">
+              <p>*As a local business based in <b><u>Nottingham</u></b>, we offer pickup and local dropoff services that <b><u>may be available upon arrangement</u></b>. Check with us in your quote to see if this service can be arranged for your order.</p>
+            </div>
         </form>
     </section>
   );

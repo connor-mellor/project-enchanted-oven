@@ -16,8 +16,8 @@ function App() {
       <Promo>🐰 Order now in time for the Easter Bunny - April 20th 🐰</Promo>
       <HeroBlock />
       <WhatWeDo />
-      <Reviews />
       <Gallery />
+      <Reviews />
       <Contact />
       <QuoteForm />
       <Footer />

@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaPhoneAlt, FaEnvelope } from "react-icons/fa"
 
 const Contact: React.FC = () => {
     const contact = {
-        mobile: '+(447) 12345123456',
+        mobile: '+(447) 7792684716',
         email: 'mariescakesandbakes@outlook.com',
         facebook: {
             pageName: 'Marie\'s Cakes & Bakes',
