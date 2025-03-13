@@ -148,10 +148,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  select {
-      -webkit-appearance: menulist-button !important;
-      line-height:24px !important;
-  }
-}

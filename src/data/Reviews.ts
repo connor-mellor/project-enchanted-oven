@@ -1,4 +1,10 @@
-const reviews: { url: string, height: string, width: string }[] = [
+type Reviews = {
+    url: string, 
+    height: string, 
+    width: string
+}
+
+const reviews: Reviews[] = [
     {
         url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fskye.mellor.3910829%2Fposts%2Fpfbid0uxP3TPojHrng4dfEEPkRnRUq6geapBY7HLMhsw2SocHmie2WZu88uJGwtTsttiEml&width=350",
         height: "247",

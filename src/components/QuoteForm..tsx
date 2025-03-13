@@ -110,7 +110,7 @@ const QuoteForm = () => {
 
             <button type="submit">Submit</button>
             <div className="warning">
-              <p>*As a local business based in <b><u>Nottingham</u></b>, we offer pickup and local dropoff services that <b><u>may be available upon arrangement</u></b>. Check with us in your quote to see if this service can be arranged for your order.</p>
+              <p>*As a local business based in <b>Nottingham</b>, we offer pickup and local dropoff services that <b>may be available upon arrangement</b>. Check with us in your quote to see if this service can be arranged for your order.</p>
             </div>
         </form>
     </section>

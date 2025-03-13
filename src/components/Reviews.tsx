@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import ReviewCard from "./ReviewCard";
 import Loading from "./Loading";
-import reviewsData from "../data/ReviewsData";
+import reviews from "../data/Reviews";
 
 const Reviews: React.FC = () => {
     return (
@@ -11,7 +11,7 @@ const Reviews: React.FC = () => {
             </div>
             <div className="reviews-container">
                 <Suspense fallback={<Loading />}>
-                    {reviewsData.map((data, i) => <ReviewCard data={data} key={i} />)}
+                    {reviews.map((data, i) => <ReviewCard data={data} key={i} />)}
                 </Suspense>
             </div>
         </section>

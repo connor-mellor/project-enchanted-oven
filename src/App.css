@@ -225,7 +225,6 @@ section {
 .quote-form .warning {
   background: #ffc10729;
   padding: calc(var(--spacing-small)* 3);
-  border: 2px solid #ffe79f;
   border-radius: 5px;
 }
 
@@ -282,7 +281,7 @@ section {
   }
 
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(3, 1fr)
   }
 
   .social-links {

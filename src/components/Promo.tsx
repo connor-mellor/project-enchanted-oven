@@ -1,4 +1,4 @@
-type PromoProps= {
+type PromoProps = {
     children?: string | null;
 }
 

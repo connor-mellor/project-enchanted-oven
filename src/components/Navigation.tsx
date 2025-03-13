@@ -1,7 +1,6 @@
 import bakeryLogo from '../assets/maries-c&b-logo.jpg'
 
 function Navigation() {
-
     return (
         <nav>
             <a href="/project-enchanted-oven">

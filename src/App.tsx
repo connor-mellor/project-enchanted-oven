@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <Promo>🐰 Order now in time for the Easter Bunny - April 20th 🐰</Promo>
+      <Promo>🐰 Order now in time for the Easter Bunny - April 20th 🐰</Promo> {/* consider adding feature flag file and pull content here */}
       <HeroBlock />
       <WhatWeDo />
       <Gallery />
