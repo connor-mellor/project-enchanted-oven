@@ -22,9 +22,9 @@
     left: 0;
     transition: 0.2s background ease;
   }
-  .image_container:hover::after {
+  /* .image_container:hover::after {
     background: #00000040;
-  }
+  } */
 
   @media (max-width: 1021px) {
     .gallery_container {
