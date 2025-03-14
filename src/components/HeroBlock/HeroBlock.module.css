@@ -75,7 +75,7 @@
 
   @media (max-width: 728px) {
     .hero_block_container > img {
-      content: url('hero-img-mob.jpg');
+      content: url('/hero-img-mob.jpg');
     }  
   
     .overlay_card {
