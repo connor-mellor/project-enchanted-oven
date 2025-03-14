@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [imageData, setImageData] = useState({ imageUrl: "", imageAlt: "" });
     const setClose = () => setIsOpen(false);
-    const handleClick = (e: React.MouseEventHandler<HTMLDivElement> , src: string, i: number) => {        
+    const handleClick = (e: React.MouseEvent<HTMLDivElement>, src: string, i: number) => {        
         setImageData({ imageUrl: src, imageAlt: `Position-${i}` })
         setIsOpen(true)
     }
