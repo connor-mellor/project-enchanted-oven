@@ -1,0 +1,87 @@
+.hero_block_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: var(--sizing-max);
+    margin: 0 auto calc(var(--spacing-small) * 8);
+  }
+  .hero_block_container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    transition: background-color 0.4s ease;
+    background: #00000020;
+  }
+  .hero_block_container h2 {
+    width: 80%;
+  }
+  .hero_block_container > img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .overlay_card {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background: #00000060;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+  .muffin_icon {
+    position: absolute;
+    animation: shake 2s linear infinite alternate-reverse;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(8deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(8deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    60% {
+      transform: rotate(8deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(8deg);
+    }
+    90% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media (max-width: 728px) {
+    .hero_block_container > img {
+      content: url('hero-img-mob.jpg');
+    }  
+  
+    .overlay_card {
+      top: 25%;
+      left: 0;
+      height: 50%;
+      width: 100%;
+    }
+}

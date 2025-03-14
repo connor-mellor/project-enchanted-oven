@@ -1,3 +1,5 @@
+import styles from './ReviewCard.module.css' 
+
 type ReviewCardProps = {
     data: {
         url?: string;
@@ -8,7 +10,7 @@ type ReviewCardProps = {
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ data }) => {
     return (
-        <div className="review-card">
+        <div className={styles.review_card}>
             <iframe 
                 src={data.url} 
                 height={data.height}

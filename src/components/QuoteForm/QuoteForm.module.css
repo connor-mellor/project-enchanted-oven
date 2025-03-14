@@ -1,0 +1,38 @@
+.quote_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: calc(var(--spacing-small)* 8) auto;
+    max-width: var(--sizing-max);
+    width: 90%;
+  } 
+  
+  .section_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+  }
+  .quote_form > label {
+    font-weight: 600;
+  }
+  .quote_form .warning {
+    background: #ffc10729;
+    padding: calc(var(--spacing-small)* 3);
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: #ff0000;
+    background: #ffbbbb;
+    padding: 0 var(--spacing-small);
+  }
+  

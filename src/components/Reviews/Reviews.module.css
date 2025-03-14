@@ -1,0 +1,36 @@
+.section_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.reviews_container::-webkit-scrollbar {
+    height: 8px;
+    border-radius: 5px;
+    background-color: #d7d7d7;
+    transition: height 0.4s ease;
+}
+
+.reviews_container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #0e0e0e80;
+}
+
+.reviews {
+    width: 90%;
+    margin: calc(var(--spacing-small)* 8) auto;
+  }
+  
+  .reviews_container {
+    display: flex;
+    align-items: center;
+    max-width: var(--sizing-slim-max);
+    margin: 0 auto;
+    padding: calc(var(--spacing-small)* 3) var(--spacing-small);
+    gap: calc(var(--spacing-small)* 3);
+    border-radius: 5px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  

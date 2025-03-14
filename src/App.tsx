@@ -1,13 +1,13 @@
 import './App.css'
-import Navigation from './components/Navigation'
-import Promo from './components/Promo.tsx'
-import HeroBlock from './components/HeroBlock.tsx'
-import WhatWeDo from './components/WhatWeDo.tsx'
-import Reviews from './components/Reviews.tsx'
-import Gallery from './components/Gallery.tsx'
-import Contact from './components/Contact.tsx'
-import QuoteForm from './components/QuoteForm..tsx'
-import Footer from './components/Footer.tsx'
+import Navigation from './components/Navigation/Navigation'
+import Promo from './components/Promo/Promo'
+import HeroBlock from './components/HeroBlock/HeroBlock'
+import WhatWeDo from './components/WhatWeDo/WhatWeDo'
+import Reviews from './components/Reviews/Reviews'
+import Gallery from './components/Gallery/Gallery'
+import Contact from './components/Contact/Contact'
+import QuoteForm from './components/QuoteForm/QuoteForm'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (

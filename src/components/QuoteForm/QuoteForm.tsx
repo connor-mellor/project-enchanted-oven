@@ -1,4 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import styles from './QuoteForm.module.css'
 
 interface FormData {
   name: string;
@@ -21,7 +22,7 @@ type CategoryType =
 
 const categoryOptions: Record<CategoryType, string[]> = {
   cakes: ["Birthday Cake", "Themed Cake", "Wedding Cake", "Custom Design"],
-  cookies: ["Chocolate Chip", "White Chocolate Chip Cookies",  "Double Chocolate Chip Cookies", "Orange Chocolate Cookies", "Raisin Cookies", "Oatmeal Cookies"],
+  cookies: ["Chocolate Chip", "White Chocolate Chip Cookies", "Double Chocolate Chip Cookies", "Orange Chocolate Cookies", "Raisin Cookies", "Oatmeal Cookies"],
   cupcakes: ["Vanilla Cupcakes", "Chocolate Cupcakes", "Red Velvet Cupcakes", "Themed Cupcakes"],
   muffins: ["Chocolate Chip Muffins", "White Chocolate Chip Muffins", "Dark Chocolate Chip Muffins", "Blueberry Muffins"],
   brownies: ["Classic Brownies", "White Chocolate Chip Brownies", "Fudge Brownies"],
@@ -50,14 +51,14 @@ const QuoteForm = () => {
         ? "Flavour" : "Cake Type";
 
   return (
-    <section className="quote-section">
-        <div className="section-title">
+    <section className={styles.quote_section}>
+        <div className={styles.section_title}>
             <h1>Get A Quote</h1>
         </div>
-        <form className="quote-form" onSubmit={handleSubmit(onSubmit)}>
+        <form className={styles.quote_form} onSubmit={handleSubmit(onSubmit)}>
             <label>Name<sup>*</sup></label>
             <input {...register("name", { required: "Name is required" })} />
-            {errors.name && <p className="error">{errors.name.message}</p>}
+            {errors.name && <p className={styles.error}>{errors.name.message}</p>}
 
             <label>Email<sup>*</sup></label>
             <input
@@ -66,7 +67,7 @@ const QuoteForm = () => {
                 pattern: { value: /\S+@\S+\.\S+/, message: "Invalid email" },
                 })}
             />
-            {errors.email && <p className="error">{errors.email.message}</p>}
+            {errors.email && <p className={styles.error}>{errors.email.message}</p>}
 
             <label>Category<sup>*</sup></label>
             <select {...register("category", { required: "Please select a category" })}>
@@ -77,7 +78,7 @@ const QuoteForm = () => {
                 </option>
                 ))}
             </select>
-            {errors.category && <p className="error">{errors.category.message}</p>}
+            {errors.category && <p className={styles.error}>{errors.category.message}</p>}
 
             {selectedCategory && (
                 <>
@@ -90,7 +91,7 @@ const QuoteForm = () => {
                     </option>
                     ))}
                 </select>
-                {errors.cakeType && <p className="error">{errors.cakeType.message}</p>}
+                {errors.cakeType && <p className={styles.error}>{errors.cakeType.message}</p>}
                 </>
             )}
 
@@ -109,7 +110,7 @@ const QuoteForm = () => {
             />
 
             <button type="submit">Submit</button>
-            <div className="warning">
+            <div className={styles.warning}>
               <p>*As a local business based in <b>Nottingham</b>, we offer pickup and local dropoff services that <b>may be available upon arrangement</b>. Check with us in your quote to see if this service can be arranged for your order.</p>
             </div>
         </form>

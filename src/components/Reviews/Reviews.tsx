@@ -1,15 +1,16 @@
 import { Suspense } from "react";
-import ReviewCard from "./ReviewCard";
-import Loading from "./Loading";
-import reviews from "../data/Reviews";
+import ReviewCard from "../ReviewCard/ReviewCard";
+import Loading from "../Loading/Loading";
+import reviews from "../../data/Reviews";
+import styles from './Reviews.module.css'
 
 const Reviews: React.FC = () => {
     return (
-        <section className="reviews">
-            <div className="section-title">
+        <section className={styles.reviews}>
+            <div className={styles.section_title}>
                 <h1>Our Reviews</h1>
             </div>
-            <div className="reviews-container">
+            <div className={styles.reviews_container}>
                 <Suspense fallback={<Loading />}>
                     {reviews.map((data, i) => <ReviewCard data={data} key={i} />)}
                 </Suspense>

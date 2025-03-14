@@ -1,3 +1,5 @@
+import styles from './ImageZoom.module.css'
+
 type ImageZoomProps = {
     imageUrl: string;
     imageAlt: string;
@@ -8,9 +10,9 @@ const ImageZoom: React.FC<ImageZoomProps> = ({ imageUrl, imageAlt, onClose }) =>
     if(!imageUrl) return null; // consider swapping out for conditional render
 
     return (
-        <section className="image-zoom">
-            <div className="image-zoom-container">
-                <div className="button-container">
+        <section className={styles.image_zoom}>
+            <div className={styles.image_zoom_container}>
+                <div className={styles.button_container}>
                     <button 
                         onClick={onClose} 
                         aria-label="Close image zoom modal"
@@ -18,7 +20,7 @@ const ImageZoom: React.FC<ImageZoomProps> = ({ imageUrl, imageAlt, onClose }) =>
                         &times;
                     </button>
                 </div>
-                <div className="image-zoom-container">
+                <div className={styles.image_container}>
                     <img src={imageUrl} alt={imageAlt} />
                 </div>
             </div>

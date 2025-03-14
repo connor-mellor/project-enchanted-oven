@@ -1,0 +1,5 @@
+.review_card {
+    pointer-events: none;
+    min-width: 350px;
+    scroll-snap-align: center;
+  }
