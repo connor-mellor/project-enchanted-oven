@@ -18,7 +18,6 @@ const Gallery: React.FC = () => {
                 {images.map((src, i) => (
                     <div className={styles.image_container} key={i} onClick={(e) => handleClick(e, src, i)}>
                         <img src={src} alt={`position-${i+1}`} loading="lazy"/>
-                        <div className={styles.zoom_icon}></div>
                     </div>
                 ))}
             </div>
