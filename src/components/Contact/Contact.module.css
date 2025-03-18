@@ -29,7 +29,8 @@
     color: var(--font-colour-black);
     display: flex;
     align-items: center;
-    text-decoration: none;
+    /* text-decoration: underline; */
+    font-weight: 600;
   }
   
   .social_link .icon,

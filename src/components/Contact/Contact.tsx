@@ -12,8 +12,10 @@ const Contact: React.FC = () => {
 
             <div className={styles.contact_info}>
                 <div className={styles.contact_item}>
-                    <FaPhoneAlt className={styles.icon} />
-                    <span>{contactDetails.mobile}</span>
+                    <a href={`tel:${contactDetails.mobile}`} className={styles.social_link}>
+                        <FaPhoneAlt className={styles.icon} />
+                        <span>{contactDetails.mobile}</span>
+                    </a>
                 </div>
                 <div className={styles.social_links}>
                     <a
@@ -36,8 +38,10 @@ const Contact: React.FC = () => {
                     </a>
                 </div>
                 <div className={styles.contact_item}>
-                    <FaEnvelope className={styles.icon} />
-                    <span>{contactDetails.email}</span>
+                    <a href={`mailto:${contactDetails.email}?subject=Inquiry: Custom Cake Quote&body=Ayup.`} className={styles.social_link}>
+                        <FaEnvelope className={styles.icon} />
+                        <span>{contactDetails.email}</span>
+                    </a>
                 </div>
             </div>
         </section>
