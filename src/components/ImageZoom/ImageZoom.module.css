@@ -1,0 +1,22 @@
+.image_zoom {
+    z-index: 1;
+    position: fixed;
+    background: #000000de;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_zoom button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 50px;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}

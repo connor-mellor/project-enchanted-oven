@@ -23,6 +23,7 @@
   .hero_block_container > img {
     height: 100%;
     width: 100%;
+    aspect-ratio: 3/1;
   }
   
   .overlay_card {
@@ -76,8 +77,9 @@
   @media (max-width: 728px) {
     .hero_block_container > img {
       content: url('/hero-img-mob.jpg');
+      aspect-ratio: 1/1.3;
     }  
-  
+    
     .overlay_card {
       top: 25%;
       left: 0;

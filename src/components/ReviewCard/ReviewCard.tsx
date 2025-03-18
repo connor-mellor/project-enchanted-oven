@@ -12,6 +12,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ data }) => {
     return (
         <div className={styles.review_card}>
             <iframe 
+                title="customer review"
                 src={data.url} 
                 height={data.height}
                 width={data.width} 

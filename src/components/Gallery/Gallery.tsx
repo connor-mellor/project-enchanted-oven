@@ -17,7 +17,7 @@ const Gallery: React.FC = () => {
             <div className={styles.gallery_container}>
                 {images.map((src, i) => (
                     <div className={styles.image_container} key={i} onClick={(e) => handleClick(e, src, i)}>
-                        <img src={src} alt={`Position-${i+1}`} loading="lazy"/>
+                        <img src={src} alt={`position-${i+1}`} loading="lazy"/>
                     </div>
                 ))}
             </div>

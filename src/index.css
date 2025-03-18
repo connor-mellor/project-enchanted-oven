@@ -59,12 +59,12 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
-h3 {
+.sub_header {
   font-size: 1.4em;
   margin: 0;
   padding: calc(var(--spacing-small) * 2);
 }
-h1, h2, h3 {
+h1, h2, .sub_header {
   font-family: "Bebas Neue";
   letter-spacing: 0.8px;
 }

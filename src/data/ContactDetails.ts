@@ -11,7 +11,7 @@ type ContactDetails = {
 }
 
 const contactDetails: ContactDetails = {
-    mobile: '+(447) 7792684716',
+    mobile: '+44 7792 684716',
     email: 'mariescakesandbakes@outlook.com',
     facebook: {
         pageName: 'Marie\'s Cakes & Bakes',

@@ -12,6 +12,24 @@
   
   .image_container {
     position: relative;
+    cursor: pointer;
+  }
+  .image_container::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("icons/zoom_in.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.2s opacity ease;
+  }
+  .image_container:hover::before {
+    opacity: 1;
   }
   .image_container::after {
     content: '';
@@ -22,9 +40,13 @@
     left: 0;
     transition: 0.2s background ease;
   }
-  /* .image_container:hover::after {
+  .image_container:hover::after {
     background: #00000040;
-  } */
+  }
+  .image_container > img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 
   @media (max-width: 1021px) {
     .gallery_container {

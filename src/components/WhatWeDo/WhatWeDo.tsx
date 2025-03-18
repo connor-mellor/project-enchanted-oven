@@ -11,7 +11,7 @@ const WhatWeDo: React.FC = () => {
                 {inventory.map(({ name }, i) => (
                     <div className={styles.tile} key={i}>
                         <div className={styles.tile_overlay}>
-                            <h3>{name}</h3>
+                            <p className="sub_header">{name}</p>
                         </div>
                     </div>
                 ))}
