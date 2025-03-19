@@ -36,15 +36,17 @@ const QuoteForm = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm<FormData>();
 
   const selectedCategory = watch("category");
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log("Order Data:", data);
+    console.table(data);
     alert("Form submitted!");
     // sendEmail(data);
+    reset();
   };
 
   const selectionLabel = 
