@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import ReviewCard from "../ReviewCard/ReviewCard";
-import Loading from "../Loading/Loading";
-import reviews from "../../data/Reviews";
+import ReviewCard from "@/components/ReviewCard/ReviewCard";
+import Loading from "@/components/Loading/Loading";
+import reviews from "@/data/Reviews";
 import styles from './Reviews.module.css'
 
 const Reviews: React.FC = () => {

@@ -1,6 +1,6 @@
-import images from "../../data/GalleryImages";
+import images from '@/data/GalleryImages';
 import styles from './Gallery.module.css'
-import ImageZoom from "../ImageZoom/ImageZoom";
+import ImageZoom from "@/components/ImageZoom/ImageZoom";
 import { useState } from "react";
 
 const Gallery: React.FC = () => {

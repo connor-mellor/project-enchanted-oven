@@ -1,4 +1,4 @@
-import inventory from "../../data/InventoryItems";
+import inventory from "@/data/InventoryItems";
 import styles from './WhatWeDo.module.css'
 
 const WhatWeDo: React.FC = () => {

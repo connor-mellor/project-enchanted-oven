@@ -44,6 +44,7 @@ const QuoteForm = () => {
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log("Order Data:", data);
     alert("Form submitted!");
+    // sendEmail(data);
   };
 
   const selectionLabel = 
