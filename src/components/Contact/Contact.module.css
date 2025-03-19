@@ -30,6 +30,9 @@
     display: flex;
     align-items: center;
   }
+  .social_link:hover {
+    text-decoration: underline;
+  }
   
   .social_link .icon,
   .contact_item .icon {

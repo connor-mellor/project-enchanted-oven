@@ -1,7 +1,7 @@
 import styles from './Promo.module.css'
 
 type PromoProps = {
-    children?: string | null;
+    children: string | null;
 }
 
 const Promo: React.FC<PromoProps> = ({ children }) => {
