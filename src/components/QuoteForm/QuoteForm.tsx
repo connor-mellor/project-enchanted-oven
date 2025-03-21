@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import styles from './QuoteForm.module.css'
+import { sendEmail } from "@/api/EmailService";
 
 interface FormData {
   name: string;
@@ -43,9 +44,9 @@ const QuoteForm = () => {
   const selectedCategory = watch("category");
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.table(data);
+    // console.table(data);
     alert("Form submitted!");
-    // sendEmail(data);
+    sendEmail(data);
     reset();
   };
 
