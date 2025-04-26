@@ -1,4 +1,4 @@
-import styles from './Promo.module.css'
+// import styles from './Promo.module.css'
 
 type PromoProps = {
     children: string | null;
@@ -6,8 +6,8 @@ type PromoProps = {
 
 const Promo: React.FC<PromoProps> = ({ children }) => {
     return (
-        <section className={styles.promo}>
-            <div className={styles.promo_text}>
+        <section className={'relative bg-l-secondaryContainer text-l-onSecondaryContainer overflow-hidden flex items-center py-6'}>
+            <div className={'absolute flex-nowrap font-medium animate_promo_text_slide whitespace-nowrap'}>
                 <p>{children}</p>
             </div>
         </section>
