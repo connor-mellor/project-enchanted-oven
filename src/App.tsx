@@ -6,7 +6,7 @@ import Gallery from '@/components/Gallery/Gallery'
 import Reviews from '@/components/Reviews/Reviews'
 // import Contact from '@/components/Contact/Contact'
 // import QuoteForm from '@/components/QuoteForm/QuoteForm'
-// import Footer from '@/components/Footer/Footer'
+import Footer from '@/components/Footer/Footer'
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
         <OurSignatures />
         <Gallery />
         <Reviews />
+        <Footer />
       </div>
       {/* <Contact />
-      <QuoteForm />
-      <Footer /> */}
+      <QuoteForm /> */}
     </>
   )
 }
