@@ -32,7 +32,7 @@ const Reviews: React.FC = () => {
         <section className="bg-l-surface">
             <div className="container mx-auto px-4 py-24">
                 <h1 className="text-2xl font-semibold mb-2">Reviews </h1>
-                <div id="default-carousel" className="relative my-8" data-carousel="slide">
+                <div id="default-carousel" className="relative mt-8" data-carousel="slide">
                     {/* <!-- Carousel wrapper --> */}
                     <div className="relative h-56 overflow-hidden rounded-lg md:h-96 bg-gray-900">
                         {reviews.map((review, index) => (
