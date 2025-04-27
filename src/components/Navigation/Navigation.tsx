@@ -16,8 +16,9 @@ function Navigation() {
     return (
         <header className="bg-l-primary">
             <div className='flex justify-between items-center mx-6 md:mx-16 p-1'>
-                <div className={'mx-auto md:mx-0 w-[165px] h-[68px]'}>
-                    <img src="maries-c&b-logo_mod.jpg" alt="company logo of white bakers pouch with blue love heart" loading="lazy" />
+                <div className={'w-18 flex justify-center mx-auto'}>
+                    {/* <img src="logo-gen-p2.png" alt="company logo of white bakers pouch with blue love heart" loading="lazy" className='flex-1'/> */}
+                    <img src="logo.png" alt="company logo of white bakers pouch with blue love heart" loading="lazy" className='flex-1' />
                 </div>
                 <nav className="">
                     <div className="lg:hidden flex justify-center items-center text-l-onPrimary">
@@ -32,7 +33,7 @@ function Navigation() {
                                     )
                                 })}
                             </ul>
-                            <div className='fixed top-4.5 right-5 lg:right-4 w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center rounded-full bg-l-primaryContainer text-l-onPrimary shadow-lg hover:bg-primary-tint-50 hover:text-l-surfaceDim transition-colors cursor-pointer z-11'>
+                            <div className='fixed top-3.5 right-6 lg:right-4 w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center rounded-full bg-l-primaryContainer text-l-onPrimary shadow-lg hover:bg-primary-tint-50 hover:text-l-surfaceDim transition-colors cursor-pointer z-11'>
                                 <i className={`bx bx-x text-4xl lg:text-xl`} onClick={() => setMbMenuVisible(!mbMenuVisible)}></i>
                             </div>
                         </div>
