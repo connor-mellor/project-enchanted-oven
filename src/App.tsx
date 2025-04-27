@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation/Navigation'
 import HeroBlock from '@/components/HeroBlock/HeroBlock'
 import Promo from '@/components/Promo/Promo'
-// import WhatWeDo from '@/components/WhatWeDo/WhatWeDo'
+import OurSignatures from '@/components/OurSignatures/OurSignatures'
 // import Reviews from '@/components/Reviews/Reviews'
 // import Gallery from '@/components/Gallery/Gallery'
 // import Contact from '@/components/Contact/Contact'
@@ -15,9 +15,9 @@ function App() {
         <Navigation />
         <HeroBlock />
         <Promo>Egg-stra special treats await! Order before April 20th</Promo>
+        <OurSignatures />
       </div>
-      {/* <WhatWeDo />
-      <Gallery />
+      {/* <Gallery />
       <Reviews />
       <Contact />
       <QuoteForm />
